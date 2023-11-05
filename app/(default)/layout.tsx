@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "@/components/footer";
 
 // import Footer from "";
 
@@ -20,8 +21,7 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       {children}
-
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
