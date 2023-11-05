@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Box } from "@mui/material";
 import { Link as ScrollLink } from "react-scroll";
-import { navigations } from "./navigation.data";
+import { navigations } from "@/data/menu/navigation.data";
 
 const Navigation: FC = () => {
   return (
@@ -17,7 +17,7 @@ const Navigation: FC = () => {
           duration={350}
           sx={{
             position: "relative",
-            color: "text.disabled",
+            color: "text.secondary",
             cursor: "pointer",
             fontWeight: 600,
             display: "inline-flex",
@@ -25,7 +25,7 @@ const Navigation: FC = () => {
             justifyContent: "center",
             px: { xs: 0, md: 3 },
             mb: { xs: 3, md: 0 },
-            fontSize: { xs: "1.2rem", md: "inherit" },
+            fontSize: { xs: "1.2rem", md: "1rem" },
             ...(destination === "/" && {
               color: "primary.main",
             }),

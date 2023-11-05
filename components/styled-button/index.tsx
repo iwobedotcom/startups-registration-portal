@@ -31,7 +31,9 @@ const StyledButtonRoot = styled("button", {
     fontWeight: 500,
     lineHeight: 1.5,
     letterSpacing: 1,
-    borderRadius: Number(theme.shape.borderRadius) * 3,
+    borderRadius: 4,
+    textTransform: "uppercase",
+    // borderRadius: Number(theme.shape.borderRadius) * 3,
 
     display: "inline-flex",
     alignItems: "center",
