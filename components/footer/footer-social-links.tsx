@@ -56,8 +56,7 @@ const SocialLinkItem: FC<SocialLinkItemProps> = ({ item }) => (
         borderRadius: "50%",
         color: "inherit",
         "&:hover": {
-          // backgroundColor: "",
-          // Place an effect  here
+          backgroundColor: "primary.main",
         },
         "& img": {
           fill: "currentColor",

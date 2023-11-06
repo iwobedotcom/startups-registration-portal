@@ -89,8 +89,10 @@ const Footer: FC = () => {
                       mb: 1,
                       color: "text.primary",
                       fontSize: { xs: "1.2rem", md: "0.9rem" },
+                      "&:hover": {
+                        color: "primary.main",
+                      },
                     }}
-                    style={{ textDecoration: "none" }}
                   >
                     ondi@nitda.gov.ng
                   </MuiLink>

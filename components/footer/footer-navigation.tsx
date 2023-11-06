@@ -89,14 +89,16 @@ const NavigationItem: FC<NavigationItemProps> = ({ label, path }) => {
   return (
     <Link href={path} passHref>
       <MuiLink
-        underline="hover"
+        underline="none" // Use "none" to remove underline
         sx={{
           display: "block",
           mb: 1,
           color: "text.primary",
           fontSize: { xs: "1.2rem", md: "0.9rem" },
+          "&:hover": {
+            color: "primary.main",
+          },
         }}
-        style={{ textDecoration: "none" }}
       >
         {label}
       </MuiLink>

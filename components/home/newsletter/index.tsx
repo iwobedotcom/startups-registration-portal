@@ -9,31 +9,33 @@ import StyledButton from "@/components/styled-button";
 
 const HomeNewsLetter: FC = () => {
   return (
-    <Box sx={{ backgroundColor: "background.paper", py: { xs: 8, md: 10 } }}>
+    <Box
+      sx={{
+        backgroundImage: "url('/images/home-newsletter-bg.svg')",
+        py: { xs: 10, md: 14 },
+      }}
+    >
       <Container>
         <Box
           sx={{
-            backgroundImage: "url('/images/home-newsletter-bg.svg')",
-            borderRadius: 10,
-            py: { xs: 4, md: 10 },
-            px: { xs: 4, md: 8 },
-            textAlign: "center",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <Typography
-            variant="h1"
-            component="h2"
             sx={{
               mb: 1,
-              fontSize: { xs: 32, md: 42 },
+              fontSize: { xs: 18, md: 28 },
               color: "primary.contrastText",
             }}
           >
-            Join Our Newsletter
+            Don&apos;t miss out &mdash; Subscribe now to fuel your journey to
+            success!
           </Typography>
-          <Typography sx={{ mb: 6, color: "primary.contrastText" }}>
+          {/* <Typography sx={{ mb: 6, color: "primary.contrastText" }}>
             Stay Informed with Our Newsletter for the Latest Updates.
-          </Typography>
+          </Typography> */}
 
           <Box
             sx={{
