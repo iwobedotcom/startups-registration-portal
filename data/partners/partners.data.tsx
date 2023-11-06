@@ -16,7 +16,7 @@ import Notap from "@/app/assets/images/partners/Notap-logo.png";
 export interface Partner {
   id: number;
   name: string;
-  logo: HTMLImageElement;
+  logo: any;
   link: string;
 }
 

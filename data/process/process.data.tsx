@@ -3,19 +3,11 @@ import IllusAngels from "@/app/assets/images/Illus02.png";
 import IllusVenture from "@/app/assets/images/Illus03.png";
 import IllusEsos from "@/app/assets/images/Illus04.png";
 
-type StaticImageData = {
-  src: string;
-  height?: number;
-  width?: number;
-  alt?: string;
-  blurDataURL?: string;
-};
-
 export interface Process {
   id: number;
   title: string;
   description: string;
-  illustration: HTMLImageElement;
+  illustration: any;
   link: string;
 }
 
